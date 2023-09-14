@@ -17,12 +17,7 @@ public:
         while (even && even->next)
         {
             odd->next = even->next;
-            // if (!odd->next)
-            //     break;
-            // else
             odd = odd->next;
-            // if (!odd->next)
-            //     break;
             even->next = odd->next;
             even = even->next; 
         }
